@@ -40,12 +40,13 @@ public class RegisterPage {
         }
     }
 
-    public boolean VerifyNavigationRegister(){
+    public void VerifyNavigationRegister(){
         //System.err.print(driver.getCurrentUrl()+"----------");
         if (!driver.getCurrentUrl().equals(URL)) {
-           return false;
+        //   return false;
+        driver.get(URL);
         }
-        return true;
+     //   return true;
     }
 
     public String RegisterUser(String userName, String Password,boolean generateRandomUsername){

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Qtrip Testing" verbose="1" >
+<test name="Regression suite 1" >
+<classes>
+<class name="qtriptest.testCase_01"/>
+<class name="qtriptest.testCase_02"/>
+<class name="qtriptest.testCase_03"/>
+<class name="qtriptest.testCase_04"/>
+</classes>
+ </test>
+</suite>

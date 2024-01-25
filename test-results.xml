@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-20T13:46:49 IST" name="Gradle suite" finished-at="2024-01-20T13:47:23 IST" duration-ms="33707">
+  <suite started-at="2024-01-25T14:44:34 IST" name="Gradle suite" finished-at="2024-01-25T14:50:18 IST" duration-ms="343649">
     <groups>
+      <group name="Booking and Cancellation Flow">
+        <method signature="testCase_03.TestCase03(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:qtriptest.tests.testCase_03@23c30a20]" name="TestCase03" class="qtriptest.tests.testCase_03"/>
+      </group> <!-- Booking and Cancellation Flow -->
+      <group name="Reliability Flow">
+        <method signature="testCase_04.TestCase04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:qtriptest.tests.testCase_04@1e1a0406]" name="TestCase04" class="qtriptest.tests.testCase_04"/>
+      </group> <!-- Reliability Flow -->
+      <group name="Search and Filter flow">
+        <method signature="testCase_02.TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:qtriptest.tests.testCase_02@437da279]" name="TestCase02" class="qtriptest.tests.testCase_02"/>
+      </group> <!-- Search and Filter flow -->
+      <group name="Login Flow">
+        <method signature="testCase_01.TestCase01(java.lang.String,java.lang.String)[pri:1, instance:qtriptest.tests.testCase_01@7bab3f1a]" name="TestCase01" class="qtriptest.tests.testCase_01"/>
+      </group> <!-- Login Flow -->
     </groups>
-    <test started-at="2024-01-20T13:46:49 IST" name="Gradle test" finished-at="2024-01-20T13:47:23 IST" duration-ms="33707">
+    <test started-at="2024-01-25T14:44:34 IST" name="Gradle test" finished-at="2024-01-25T14:50:18 IST" duration-ms="343649">
       <class name="qtriptest.tests.testCase_01">
-        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:0, instance:qtriptest.tests.testCase_01@32ee6fee]" started-at="2024-01-20T13:46:53 IST" name="TestCase01" data-provider="dpM" finished-at="2024-01-20T13:47:03 IST" duration-ms="9777" status="PASS">
+        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:1, instance:qtriptest.tests.testCase_01@7bab3f1a]" started-at="2024-01-25T14:44:39 IST" name="TestCase01" data-provider="dpM" finished-at="2024-01-25T14:44:50 IST" duration-ms="10199" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +35,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase01 -->
-        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:0, instance:qtriptest.tests.testCase_01@32ee6fee]" started-at="2024-01-20T13:47:03 IST" name="TestCase01" data-provider="dpM" finished-at="2024-01-20T13:47:13 IST" duration-ms="9665" status="PASS">
+        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:1, instance:qtriptest.tests.testCase_01@7bab3f1a]" started-at="2024-01-25T14:44:50 IST" name="TestCase01" data-provider="dpM" finished-at="2024-01-25T14:44:59 IST" duration-ms="9340" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase01 -->
-        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:0, instance:qtriptest.tests.testCase_01@32ee6fee]" started-at="2024-01-20T13:47:13 IST" name="TestCase01" data-provider="dpM" finished-at="2024-01-20T13:47:23 IST" duration-ms="9898" status="PASS">
+        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:1, instance:qtriptest.tests.testCase_01@7bab3f1a]" started-at="2024-01-25T14:44:59 IST" name="TestCase01" data-provider="dpM" finished-at="2024-01-25T14:45:09 IST" duration-ms="9513" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,15 +69,330 @@
         </test-method> <!-- TestCase01 -->
       </class> <!-- qtriptest.tests.testCase_01 -->
       <class name="qtriptest.tests.TestCases">
-        <test-method is-config="true" signature="createDriver()[pri:0, instance:qtriptest.tests.TestCases@2c1b194a]" started-at="2024-01-20T13:46:49 IST" name="createDriver" finished-at="2024-01-20T13:46:52 IST" duration-ms="2698" status="PASS">
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:qtriptest.tests.TestCases@5b03b9fe]" started-at="2024-01-25T14:44:34 IST" name="createDriver" finished-at="2024-01-25T14:44:38 IST" duration-ms="3612" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:qtriptest.tests.TestCases@2c1b194a]" started-at="2024-01-20T13:47:23 IST" name="quitDriver" finished-at="2024-01-20T13:47:23 IST" duration-ms="73" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:qtriptest.tests.TestCases@5b03b9fe]" started-at="2024-01-25T14:50:18 IST" name="quitDriver" finished-at="2024-01-25T14:50:18 IST" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- qtriptest.tests.TestCases -->
+      <class name="qtriptest.tests.testCase_04">
+        <test-method signature="TestCase04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:qtriptest.tests.testCase_04@1e1a0406]" started-at="2024-01-25T14:46:59 IST" name="TestCase04" data-provider="dpM" finished-at="2024-01-25T14:48:05 IST" duration-ms="66542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC4_1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Bengaluru;Niaboytown;Chicky;01-01-2025;2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kolkata;Thton;Cha Cha;01-02-2025;3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Malaysia;Wootkentree;Bom Bom;02-12-2025;1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase04 -->
+        <test-method signature="TestCase04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:qtriptest.tests.testCase_04@1e1a0406]" started-at="2024-01-25T14:48:05 IST" name="TestCase04" data-provider="dpM" finished-at="2024-01-25T14:49:11 IST" duration-ms="66072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC4_2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@321]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Bengaluru;Fort Sionnnn;Chicky;01-01-2025;2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kolkata;North Gelgoon;Cha Cha;01-02-2025;3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Malaysia;Wootkentree;Lya;02-12-2025;1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase04 -->
+        <test-method signature="TestCase04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:qtriptest.tests.testCase_04@1e1a0406]" started-at="2024-01-25T14:49:11 IST" name="TestCase04" data-provider="dpM" finished-at="2024-01-25T14:50:18 IST" duration-ms="66190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC4_3@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@321]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Goa;Perthby;Chicky;01-01-2025;2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bengaluru;Niaboytown;Chicky;01-01-2025;2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Bengaluru;Fort Sionnnn;Chicky;01-01-2025;2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase04 -->
+      </class> <!-- qtriptest.tests.testCase_04 -->
+      <class name="qtriptest.tests.testCase_03">
+        <test-method signature="TestCase03(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:qtriptest.tests.testCase_03@23c30a20]" started-at="2024-01-25T14:45:38 IST" name="TestCase03" data-provider="dpM" finished-at="2024-01-25T14:46:05 IST" duration-ms="26729" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC3_1@gmaill.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Bengaluru]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Niaboytown]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[palam]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[16-11-2025]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase03 -->
+        <test-method signature="TestCase03(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:qtriptest.tests.testCase_03@23c30a20]" started-at="2024-01-25T14:46:05 IST" name="TestCase03" data-provider="dpM" finished-at="2024-01-25T14:46:32 IST" duration-ms="26769" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC3_2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Singapore]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Grand Ashland]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[biden]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[26-11-2025]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase03 -->
+        <test-method signature="TestCase03(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:qtriptest.tests.testCase_03@23c30a20]" started-at="2024-01-25T14:46:32 IST" name="TestCase03" data-provider="dpM" finished-at="2024-01-25T14:46:59 IST" duration-ms="26676" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC3_3@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Bangkok]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tifwales Ferry]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[prabhu]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[26-12-2025]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase03 -->
+      </class> <!-- qtriptest.tests.testCase_03 -->
+      <class name="qtriptest.tests.testCase_02">
+        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:qtriptest.tests.testCase_02@437da279]" started-at="2024-01-25T14:45:09 IST" name="TestCase02" data-provider="dpM" finished-at="2024-01-25T14:45:19 IST" duration-ms="9863" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bengaluru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cycling Routes]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[6-12 Hours]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase02 -->
+        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:qtriptest.tests.testCase_02@437da279]" started-at="2024-01-25T14:45:19 IST" name="TestCase02" data-provider="dpM" finished-at="2024-01-25T14:45:29 IST" duration-ms="9690" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Singapore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hillside Getaways]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[6-12 Hours]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase02 -->
+        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:qtriptest.tests.testCase_02@437da279]" started-at="2024-01-25T14:45:29 IST" name="TestCase02" data-provider="dpM" finished-at="2024-01-25T14:45:38 IST" duration-ms="9770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Goa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Party Spots]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2-6 Hours]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase02 -->
+      </class> <!-- qtriptest.tests.testCase_02 -->
     </test> <!-- Gradle test -->
   </suite> <!-- Gradle suite -->
 </testng-results>
