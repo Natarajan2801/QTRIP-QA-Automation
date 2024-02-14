@@ -2,6 +2,8 @@ package qtriptest.pages;
 
 
 
+import qtriptest.SeleniumWrapper;
+import java.net.MalformedURLException;
 import java.sql.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -28,8 +30,8 @@ public class AdventureDetailsPage {
     @FindBy(css = ".reserve-button")
     WebElement reserveButton;
 
-    @FindBy(css = ".alert-success ")
-    WebElement verificationPopup;
+    // @FindBy(css = ".alert-success")
+    // WebElement verificationPopup;
 
 
     //.alert-success 
@@ -43,8 +45,8 @@ public class AdventureDetailsPage {
         PageFactory.initElements(factory, this);
     }
 
-    public void bookAdventure(String name, String date,String count) throws InterruptedException{
-      //  Thread.sleep(2000);
+    public void bookAdventure(String name, String date,String count) throws InterruptedException, MalformedURLException{
+       Thread.sleep(2000);
         nameInput.click();
         nameInput.sendKeys(name);
         
@@ -56,10 +58,18 @@ public class AdventureDetailsPage {
 
         reserveButton.click();
 
+        // SeleniumWrapper.sendKeys(nameInput,name );
+        // SeleniumWrapper.sendKeys(dateInput, date);
+        // SeleniumWrapper.sendKeys(personInput,count );  
+        // SeleniumWrapper.click(reserveButton);
+
     }
 
     public boolean isBookingSucessful(){
-        return verificationPopup.isDisplayed();
+         // @FindBy(css = ".alert-success")
+    // WebElement verificationPopup;
+      return driver.findElement(By.cssSelector(".alert-success")).isDisplayed();
+      //  return verificationPopup.isDisplayed();
     }
 
     public void ClickReservation(){

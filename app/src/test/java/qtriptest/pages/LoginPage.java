@@ -25,8 +25,9 @@ public class LoginPage {
         PageFactory.initElements(factory, this);
     }
 
-    public void PerformLogin(String username,String Password){
+    public void PerformLogin(String username,String Password) throws InterruptedException{
         Email_box.click();
+        Thread.sleep(2000);
         Email_box.sendKeys(username);
         Password_box.click();
         Password_box.sendKeys(Password);

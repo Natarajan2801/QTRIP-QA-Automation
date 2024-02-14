@@ -1,5 +1,6 @@
 package qtriptest.pages;
 
+import qtriptest.SeleniumWrapper;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -12,6 +13,7 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 public class HomePage {
     RemoteWebDriver driver;
     String URL = "https://qtripdynamic-qa-frontend.vercel.app/";
+                //https://qtripdynamic-qa-frontend.vercel.app/                    
 
 
     @FindBy(css =".register")
@@ -37,9 +39,10 @@ public class HomePage {
     }
 
     public void navigateToHomePage() {
-        if (!driver.getCurrentUrl().equals(URL)) {
-            driver.get(URL);
+        if (!driver.getCurrentUrl().equals(this.URL)) {
+            driver.get(this.URL);
         }
+      //  SeleniumWrapper.navigate(driver, url);
     }
 
     public void ClickRegister() {
@@ -60,10 +63,12 @@ public Boolean isUserLoggedin() {
         Logout_button.click();
     }
 
-    public void searchCity(String city){
+    public void searchCity(String city) throws InterruptedException{
         search_box.click();
+        Thread.sleep(3000);
         search_box.clear();
         search_box.sendKeys(city);
+        Thread.sleep(2000);
     }
 
     public void selectCity(String city){

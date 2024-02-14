@@ -60,7 +60,7 @@ public class HistoryPage {
             return driver.findElement(By.xpath(xpath)).isDisplayed();
             }
             catch(Exception e){
-                System.out.println(e.getMessage());
+               // System.out.println(e.getMessage());
                 return true;
             }
     }
